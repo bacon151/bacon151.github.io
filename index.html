@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="common.css">
+  <style>
+    main {
+      clear: both;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 30px;
+      padding: 40px;
+      flex-wrap: wrap;
+      background: linear-gradient(to bottom right, #fff5e6, #f8f9fa);
+    }
+    .photo {
+      border: 1px solid #444;
+    }
+    .intro-text {
+      width: 300px;
+      height: auto;
+      background-color: #f3f4f6;
+      border: 1px solid #444;
+      padding: 10px;
+      font-size: 18px;
+    }
+
+    .basic-info {
+      margin-top: 20px;
+      width: 300px;
+      background-color: #fff;
+      border: 1px solid #444;
+      padding: 10px;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        display: block;
+        text-align: center;
+      }
+
+      #logo {
+        float: none;
+        margin: 0 auto;
+        display: block;
+      }
+
+      nav {
+        float: none;
+        margin-top: 10px;
+      }
+
+      nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul li {
+        margin: 5px 0;
+      }
+
+      main {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .intro-text,
+      .basic-info {
+        width: 90%;
+        max-width: 400px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html"><img id="logo" src="logo.jpg"></a>
+    <nav>
+      <ul>
+        <li><a href="Subpage1.html"><img src="menu01.jpg"></a></li>
+        <li><a href="Subpage2.html"><img src="menu02.jpg"></a></li>
+        <li><a href="Subpage3.html"><img src="menu03.jpg"></a></li>
+        <li><a href="Subpage4.html"><img src="menu04.jpg"></a></li>
+        <li><a href="Subpage5.html"><img src="menu05.jpg"></a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <div class="photo"><img src="mainphoto.jpg"></div>
+    <div>
+      <div class="intro-text">
+        안녕하세요! 이 홈페이지는 저를 소개하기 위해 만든 자기소개용 웹페이지입니다.<br><br>
+        저는 컴퓨터공학을 전공하며 웹 개발과 소프트웨어 기술에 관심을 가지고 공부하고 있습니다. 
+        이 사이트는 저의 일상, 특별한 활동, 성격의 장단점, 미래의 비전 등을 하나의 웹페이지로 구성해 표현해보려는 시도입니다.<br><br>
+        향후 정식 포트폴리오 사이트 제작을 위한 연습이자, 저를 좀 더 생생하게 알릴 수 있는 공간이 되기를 바랍니다.
+      </div>
+      <div class="basic-info">
+        <p>이름: 박준형</p>
+        <p>학교: 가천대학교</p>
+        <p>취미: 코딩, 독서, 게임</p>
+        <p>생년월일: 2003.05.22</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+  <p>
+    <a href="index.html">🏠 홈으로</a> |
+    <a href="#top">🔝 맨 위로</a>
+  </p>
+    ⓒ 2025 나의 홈페이지
+  </footer>
+</body>
+</html>

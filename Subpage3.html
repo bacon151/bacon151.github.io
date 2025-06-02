@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="common.css">
+  <style>
+    main {
+      padding: 30px;
+      background: linear-gradient(to bottom right, #fff5e6, #f8f9fa);
+      display: flex;
+      gap: 30px;
+      min-height: 80vh;
+    }
+
+    .sub-nav {
+      flex: 1;
+      background-color: #fde68a;
+      padding: 20px;
+      border: 2px solid #d97706;
+      height: fit-content;
+    }
+
+    .sub-nav h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .sub-nav a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .features {
+      flex: 4;
+    }
+
+    .feature-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 340px;
+      margin: 0 auto;
+      gap: 20px;
+    }
+
+    .feature {
+      width: 100px;
+      height: 100px;
+      border: 2px solid #b45309;
+      border-radius: 50%;
+      background-color: #f3f4f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .feature-description {
+      margin-top: 20px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .feature-detail {
+      background-color: #fff;
+      padding: 15px;
+      margin-top: 30px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 15px;
+      line-height: 1.7;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 768px) {
+      header {
+        text-align: center;
+      }
+
+      #logo {
+        float: none;
+        margin: 0 auto;
+        display: block;
+      }
+
+      nav {
+        float: none;
+        margin-top: 10px;
+      }
+
+      nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul li {
+        margin: 5px 0;
+      }
+
+      main {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .sub-nav {
+        width: 90%;
+        text-align: center;
+      }
+
+      .feature-grid {
+        gap: 15px;
+      }
+
+      .feature {
+        width: 80px;
+        height: 80px;
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html"><img id="logo" src="logo.jpg"></a>
+    <nav>
+      <ul>
+        <li><a href="Subpage1.html"><img src="menu01.jpg"></a></li>
+        <li><a href="Subpage2.html"><img src="menu02.jpg"></a></li>
+        <li><a href="Subpage3.html"><img src="menu03.jpg"></a></li>
+        <li><a href="Subpage4.html"><img src="menu04.jpg"></a></li>
+        <li><a href="Subpage5.html"><img src="menu05.jpg"></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="sub-nav">
+      <h3>Subpage_3</h3>
+      <a href="Subpage3.html"><p>▶ 특징</p></a> <br>
+      <a href="Subpage3_1.html"><p>장점</p></a>  <br>
+      <a href="Subpage3_2.html"><p>단점 및 개선점</p></a>
+    </div>
+
+    <div class="features">
+      <div class="feature-grid">
+        <div class="feature">성실함</div>
+        <div class="feature">완벽주의</div>
+        <div class="feature">책임감</div>
+        <div class="feature">의사소통</div>
+        <div class="feature">창의성</div>
+        <div class="feature">우선순위 설정</div>
+      </div>
+
+      <div class="feature-description">
+        다양한 특징들을 바탕으로 저만의 강점을 쌓아왔습니다.<br>
+        각 특징은 프로젝트, 대외활동, 학업을 통해 길러졌습니다.
+      </div>
+
+      <div class="feature-detail">
+         성실함은 매일 꾸준한 학습과 과제 수행을 통해 자연스럽게 길러졌습니다.<br>
+    책임감은 팀 프로젝트나 조별 과제에서 맡은 역할을 끝까지 완수하며 체득했습니다.<br>
+    창의성은 문제 해결 과정에서 새로운 접근 방식을 제시하면서 발달했고,<br>
+    협업능력은 다양한 조별 활동과 동아리 활동을 통해 타인과 소통하고 협력하는 능력으로 발전했습니다.<br>
+    분석력은 데이터를 바탕으로 문제를 해결하거나 논리적인 사고를 하는 과정을 통해 키웠으며,<br>
+    소통능력은 발표, 보고서 작성, 팀원 간의 커뮤니케이션에서 갈고닦았습니다.<br><br>
+    이러한 특성들은 제가 앞으로 어떤 환경에서도 유연하게 적응하고, 팀에 기여할 수 있는 역량의 기반이 됩니다.
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>
+      <a href="index.html">🏠 홈으로</a> |
+      <a href="#top">🔝 맨 위로</a>
+    </p>
+    ⓒ 2025 나의 홈페이지
+  </footer>
+</body>
+</html>

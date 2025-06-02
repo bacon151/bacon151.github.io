@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="common.css">
+  <style>
+    main {
+      padding: 30px;
+      background: linear-gradient(to bottom right, #fff5e6, #f8f9fa);
+      display: flex;
+      gap: 30px;
+    }
+
+    .sub-nav {
+      flex: 1;
+      background-color: #fde68a;
+      padding: 20px;
+      border: 2px solid #d97706;
+      height: fit-content;
+    }
+
+    .sub-nav h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .sub-nav a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .features {
+      flex: 4;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .feature-item {
+      background-color: #fff;
+      padding: 20px;
+      border: 2px solid #b45309;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .feature {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 10px auto;
+      border: 2px solid #b45309;
+      border-radius: 50%;
+      background-color: #f3f4f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .reason {
+      font-size: 14px;
+      color: #333;
+      margin-top: 10px;
+    }
+
+    .summary {
+      margin-top: 50px;
+      font-size: 16px;
+      line-height: 1.8;
+      color: #374151;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .sub-nav {
+        width: 90%;
+        text-align: center;
+      }
+
+      .feature-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .feature {
+        width: 70px;
+        height: 70px;
+        font-size: 12px;
+      }
+
+      .reason {
+        font-size: 13px;
+      }
+
+      .summary {
+        font-size: 14px;
+        padding: 0 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html"><img id="logo" src="logo.jpg"></a>
+    <nav>
+      <ul>
+        <li><a href="Subpage1.html"><img src="menu01.jpg" alt="menu1"></a></li>
+        <li><a href="Subpage2.html"><img src="menu02.jpg" alt="menu2"></a></li>
+        <li><a href="Subpage3.html"><img src="menu03.jpg" alt="menu3"></a></li>
+        <li><a href="Subpage4.html"><img src="menu04.jpg" alt="menu4"></a></li>
+        <li><a href="Subpage5.html"><img src="menu05.jpg" alt="menu5"></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="sub-nav">
+      <h3>Subpage_3</h3>
+      <a href="Subpage3.html"><p>특징</p></a> <br>
+      <a href="Subpage3_1.html"><p>▶ 장점</p></a>  <br>
+      <a href="Subpage3_2.html"><p>단점 및 개선점</p></a>
+    </div>
+
+    <div class="features">
+      <div class="feature-grid">
+        <div class="feature-item">
+          <div class="feature">성실함</div>
+          <div class="reason">과제나 업무를 성실하게 마무리하며 책임감을 갖고 임합니다.</div>
+        </div>
+        <div class="feature-item">
+          <div class="feature">책임감</div>
+          <div class="reason">맡은 일에 끝까지 책임을 지며 주변에 신뢰를 줍니다.</div>
+        </div>
+        <div class="feature-item">
+          <div class="feature">창의성</div>
+          <div class="reason">새로운 아이디어와 시도로 문제를 창의적으로 해결합니다.</div>
+        </div>
+        <div class="feature-item">
+          <div class="feature">협업능력</div>
+          <div class="reason">팀원들과 잘 협력하며 긍정적인 분위기를 만듭니다.</div>
+        </div>
+        <div class="feature-item">
+          <div class="feature">분석력</div>
+          <div class="reason">복잡한 문제를 논리적으로 분석하여 핵심을 파악합니다.</div>
+        </div>
+        <div class="feature-item">
+          <div class="feature">소통능력</div>
+          <div class="reason">상대방의 말을 잘 듣고 명확하게 의사 전달을 합니다.</div>
+        </div>
+      </div>
+
+      <div class="summary">
+        위에서 소개한 저의 장점들은 단순한 성격의 나열이 아니라, 실제 경험과 활동 속에서 길러진 강점들입니다. <br />
+        이 장점들은 앞으로도 다양한 상황에서 유연하게 발휘될 수 있으며, 끊임없이 성장하는 제 자신을 만들어 줄 중요한 밑거름이 될 것입니다. <br />
+        팀워크가 필요한 상황에서도, 혼자 해결해야 할 문제 앞에서도 제가 가진 강점들을 기반으로 책임감 있게 임하겠습니다.
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>
+      <a href="index.html">🏠 홈으로</a> |
+      <a href="#top">🔝 맨 위로</a>
+    </p>
+    ⓒ 2025 나의 홈페이지
+  </footer>
+</body>
+</html>

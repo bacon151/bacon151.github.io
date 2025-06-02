@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="common.css">
+  <style>
+    main {
+      padding: 30px;
+      background: linear-gradient(to bottom right, #fff5e6, #f8f9fa);
+    }
+
+    .section-header {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      background-color: #facc15;
+      padding: 10px;
+      margin-bottom: 30px;
+    }
+
+    .activities {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .activity {
+      flex: 1 1 calc(33% - 20px);
+      background-color: white;
+      border: 2px solid #d97706;
+      border-radius: 8px;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .activity img {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 5px;
+      background-color: #e5e7eb;
+    }
+
+    .activity p {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        text-align: center;
+      }
+
+      #logo {
+        float: none;
+        margin: 0 auto;
+        display: block;
+      }
+
+      nav {
+        float: none;
+        margin-top: 10px;
+      }
+
+      nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul li {
+        margin: 5px 0;
+      }
+      
+      .activities {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .activity {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html"><img id="logo" src="logo.jpg"></a>
+    <nav>
+      <ul>
+        <li><a href="Subpage1.html"><img src="menu01.jpg"></a></li>
+        <li><a href="Subpage2.html"><img src="menu02.jpg"></a></li>
+        <li><a href="Subpage3.html"><img src="menu03.jpg"></a></li>
+        <li><a href="Subpage4.html"><img src="menu04.jpg"></a></li>
+        <li><a href="Subpage5.html"><img src="menu05.jpg"></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="section-header">특별한 활동</div>
+
+    <div class="activities">
+      <div class="activity">
+        <img src="specialphoto1.jpg">
+        <p>욱군 AT 플랫폼 및 자동화 시스템 개발 <br> 육군 소프트웨어 개발병으로 선발되어 실제 데이터 플랫폼 제작과 자동화 업무 시스템 개발을 진행했습니다.</p>
+      </div>
+      <div class="activity">
+        <img src="specialphoto2.jpg">
+        <p>군 부대 빅데이터 전문가 인터뷰 <br> 군수 데이터 기반 수요예측 모델 전문가와 직접 인터뷰 하며 그 지식을 배웠습니다.</p>
+      </div>
+      <div class="activity">
+        <img src="specialphoto3.jpg">
+        <p>컴퓨터 직접 조립 및 개조 <br> 정해진 예산속에서 효율적으로 구매하기위해 직접 부품을 찾아보고 구매하였고 추가적으로 개조를 진행했습니다.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>
+      <a href="index.html">🏠 홈으로</a> |
+      <a href="#top">🔝 맨 위로</a>
+    </p>
+      ⓒ 2025 나의 홈페이지
+  </footer>
+</body>
+</html>

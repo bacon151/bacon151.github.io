@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="common.css">
+  <style>
+    .container {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      padding: 30px;
+      background: linear-gradient(to bottom right, #fff5e6, #f8f9fa);
+    }
+
+    .container a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    aside {
+      width: 150px;
+      background-color: #fed7aa;
+      padding: 15px;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 2;
+      border: 1px solid #444;
+    }
+
+    section {
+      flex: 1;
+      background-color: white;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+
+    .section-header {
+      background-color: #facc15;
+      padding: 10px;
+      font-size: 20px;
+      margin-bottom: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .image-box {
+      flex-shrink: 0;
+      text-align: center;
+    }
+
+    .image-box img {
+      max-width: 300px;
+      height: auto;
+      border-radius: 10px;
+      border: 1px solid #aaa;
+    }
+
+    .intro-text {
+      max-width: 500px;
+      background-color: #f3f4f6;
+      border: 1px solid #444;
+      padding: 15px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .grade-links {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .grade-links a {
+      display: inline-block;
+      background-color: #e0f2fe;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-weight: bold;
+      color: black;
+      text-decoration: none;
+      border: 1px solid #999;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        text-align: center;
+      }
+
+      #logo {
+        float: none;
+        margin: 0 auto;
+        display: block;
+      }
+
+      nav {
+        float: none;
+        margin-top: 10px;
+      }
+
+      nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul li {
+        margin: 5px 0;
+      }
+
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .content {
+        flex-direction: column;
+      }
+
+      aside {
+        width: 100%;
+        text-align: center;
+      }
+
+      .image-box,
+      .intro-text {
+        width: 100%;
+        height: auto;
+      }
+
+      .grade-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .grade-links a {
+        width: 80%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html"><img id="logo" src="logo.jpg"></a>
+    <nav>
+      <ul>
+        <li><a href="Subpage1.html"><img src="menu01.jpg"></a></li>
+        <li><a href="Subpage2.html"><img src="menu02.jpg"></a></li>
+        <li><a href="Subpage3.html"><img src="menu03.jpg"></a></li>
+        <li><a href="Subpage4.html"><img src="menu04.jpg"></a></li>
+        <li><a href="Subpage5.html"><img src="menu05.jpg"></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <aside>
+      <a href="Subpage1.html"><p>대학교</p></a>
+      <a href="Subpage1_1.html"><p>고등학교</p></a>
+      <a href="Subpage1_2.html"><p>중학교</p></a>
+      <a href="Subpage1_3.html"><p>▶초등학교</p></a>
+    </aside>
+
+    <section>
+      <div class="section-header">나의 일생 (초등학교)</div>
+      <div class="content">
+        <div class="image-box"><img src="school.jpg"></div>
+        <div class="intro-text">
+          어릴 적부터 컴퓨터에 대한 호기심이 많았습니다. 초등학교 때 형이 학원을 간 사이 집에 있던 컴퓨터를 만지작거리며, 게임을 하거나 여러 사이트를 이용해보곤 했습니다. 
+          학교를 가서 다양한 친구들을 사귀게 되면서 게임을 설치하고 프로그램이 쓰는법을 알게 되었고 본격적으로 소프트웨어 즉 프로그램에 대해 관심을 갔게된것 같습니다. 
+          하지만 그 관심이 곧바로 진로로 이어진 건 아니었습니다. 단지 '컴퓨터를 좋아하는 아이'로만 머물렀습니다.  
+          그렇게 시간이 흘러 중학교, 고등학교를 지나면서, 단순한 관심을 넘어서 컴퓨터와 그 소프트웨어들이 사람들의 삶을 바꾸는 방식에 감탄하게 되었고, 
+          대학교 컴퓨터 공학과를 다니며 전문적인 지식을 배우다보니 더 더욱 이건 내가 평생 해보고 싶은 일이라는 확신을 가지게 되었습니다. 
+          지금 생각해보면, 초등학생 시절의 친구들을 만나며 컴퓨터에 관심을 가졌던게 결국 지금의 길로 이어지는 작은 불씨였던 것 같습니다.
+        </div>
+      </div>
+      <div class="grade-links">
+        <a href="Subpage1.html">대</a>
+        <a href="Subpage1_1.html">고</a>
+        <a href="Subpage1_2.html">중</a>
+        <a href="Subpage1_3.html">초</a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+  <p>
+    <a href="index.html">🏠 홈으로</a> |
+    <a href="#top">🔝 맨 위로</a>
+  </p>
+    ⓒ 2025 나의 홈페이지
+  </footer>
+</body>
+</html>

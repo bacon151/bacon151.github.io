@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="common.css">
+  <style>
+    .container {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      padding: 30px;
+      background: linear-gradient(to bottom right, #fff5e6, #f8f9fa);
+    }
+
+    .container a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    aside {
+      width: 150px;
+      background-color: #fed7aa;
+      padding: 15px;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 2;
+      border: 1px solid #444;
+    }
+
+    section {
+      flex: 1;
+      background-color: white;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+
+    .section-header {
+      background-color: #facc15;
+      padding: 10px;
+      font-size: 20px;
+      margin-bottom: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .image-box {
+      flex-shrink: 0;
+      text-align: center;
+    }
+
+    .image-box img {
+      max-width: 300px;
+      height: auto;
+      border-radius: 10px;
+      border: 1px solid #aaa;
+    }
+
+    .intro-text {
+      max-width: 500px;
+      background-color: #f3f4f6;
+      border: 1px solid #444;
+      padding: 15px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .grade-links {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .grade-links a {
+      display: inline-block;
+      background-color: #e0f2fe;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-weight: bold;
+      color: black;
+      text-decoration: none;
+      border: 1px solid #999;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        text-align: center;
+      }
+
+      #logo {
+        float: none;
+        margin: 0 auto;
+        display: block;
+      }
+
+      nav {
+        float: none;
+        margin-top: 10px;
+      }
+
+      nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul li {
+        margin: 5px 0;
+      }
+
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .content {
+        flex-direction: column;
+      }
+
+      aside {
+        width: 100%;
+        text-align: center;
+      }
+
+      .image-box,
+      .intro-text {
+        width: 100%;
+        height: auto;
+      }
+
+      .grade-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .grade-links a {
+        width: 80%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html"><img id="logo" src="logo.jpg"></a>
+    <nav>
+      <ul>
+        <li><a href="Subpage1.html"><img src="menu01.jpg"></a></li>
+        <li><a href="Subpage2.html"><img src="menu02.jpg"></a></li>
+        <li><a href="Subpage3.html"><img src="menu03.jpg"></a></li>
+        <li><a href="Subpage4.html"><img src="menu04.jpg"></a></li>
+        <li><a href="Subpage5.html"><img src="menu05.jpg"></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <aside>
+      <a href="Subpage1.html"><p>대학교</p></a>
+      <a href="Subpage1_1.html"><p>고등학교</p></a>
+      <a href="Subpage1_2.html"><p>▶ 중학교</p></a>
+      <a href="Subpage1_3.html"><p>초등학교</p></a>
+    </aside>
+
+    <section>
+      <div class="section-header">나의 일상 (중학교)</div>
+      <div class="content">
+        <div class="image-box"><img src="midleschool.jpg"></div>
+        <div class="intro-text">
+          초등학교 때부터 컴퓨터를 좋아하긴 했지만, 본격적으로 전문적인 시선을 가지게된건 중학교 1학년 때였습니다.
+          중학교에 들어서면서 형의 컴퓨터를 사용하던 저에게 적당한 예산으로 컴퓨터를 맞춰주겠다 하셨고 내가 원하는 프로그램을 사용하기위해선 컴퓨터에 대해 자세히 공부해야 했습니다. 
+          주어진 예산에서 최선의 결과를 뽑기위해 그때부터 인터넷으로 CPU와 그래픽카드, 메모리의 차이를 하나하나 비교해가며 스스로 PC 견적을 짜고 부품을 고르고, 결국 조립까지 직접 해냈습니다.
+          처음에는 막막했지만, 작은 실수를 고치고 전원을 켜던 순간의 뿌듯함은 아직도 기억에 생생합니다. 
+          그 일을 계기로 컴퓨터를 사용하는 도구가 아니라, 내가 직접 만들고 이해할 수 있는 대상으로 보게 되었고, 그 이후로는 자연스럽게 개발과 소프트웨어에 대한 관심으로 확장되었습니다.
+        </div>
+      </div>
+      <div class="grade-links">
+        <a href="Subpage1.html">대</a>
+        <a href="Subpage1_1.html">고</a>
+        <a href="Subpage1_2.html">중</a>
+        <a href="Subpage1_3.html">초</a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+  <p>
+    <a href="index.html">🏠 홈으로</a> |
+    <a href="#top">🔝 맨 위로</a>
+  </p>
+    ⓒ 2025 나의 홈페이지
+  </footer>
+</body>
+</html>

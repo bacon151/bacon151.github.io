@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="common.css">
+  <style>
+    .container {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      padding: 30px;
+      background: linear-gradient(to bottom right, #fff5e6, #f8f9fa);
+    }
+
+    .container a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    aside {
+      width: 150px;
+      background-color: #fed7aa;
+      padding: 15px;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 2;
+      border: 1px solid #444;
+    }
+
+    section {
+      flex: 1;
+      background-color: white;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+
+    .section-header {
+      background-color: #facc15;
+      padding: 10px;
+      font-size: 20px;
+      margin-bottom: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .image-box {
+      flex-shrink: 0;
+      text-align: center;
+    }
+
+    .image-box img {
+      max-width: 300px;
+      height: auto;
+      border-radius: 10px;
+      border: 1px solid #aaa;
+    }
+
+    .intro-text {
+      max-width: 500px;
+      background-color: #f3f4f6;
+      border: 1px solid #444;
+      padding: 15px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .grade-links {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .grade-links a {
+      display: inline-block;
+      background-color: #e0f2fe;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-weight: bold;
+      color: black;
+      text-decoration: none;
+      border: 1px solid #999;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        text-align: center;
+      }
+
+      #logo {
+        float: none;
+        margin: 0 auto;
+        display: block;
+      }
+
+      nav {
+        float: none;
+        margin-top: 10px;
+      }
+
+      nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul li {
+        margin: 5px 0;
+      }
+
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .content {
+        flex-direction: column;
+      }
+
+      aside {
+        width: 100%;
+        text-align: center;
+      }
+
+      .image-box,
+      .intro-text {
+        width: 100%;
+        height: auto;
+      }
+
+      .grade-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .grade-links a {
+        width: 80%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html"><img id="logo" src="logo.jpg"></a>
+    <nav>
+      <ul>
+        <li><a href="Subpage1.html"><img src="menu01.jpg"></a></li>
+        <li><a href="Subpage2.html"><img src="menu02.jpg"></a></li>
+        <li><a href="Subpage3.html"><img src="menu03.jpg"></a></li>
+        <li><a href="Subpage4.html"><img src="menu04.jpg"></a></li>
+        <li><a href="Subpage5.html"><img src="menu05.jpg"></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <aside>
+      <a href="Subpage1.html"><p>대학교</p></a>
+      <a href="Subpage1_1.html"><p>▶고등학교</p></a>
+      <a href="Subpage1_2.html"><p>중학교</p></a>
+      <a href="Subpage1_3.html"><p>초등학교</p></a>
+    </aside>
+
+    <section>
+      <div class="section-header">나의 일상 (고등학교)</div>
+      <div class="content">
+        <div class="image-box"><img src="highschool.jpg"></div>
+        <div class="intro-text">
+          고등학교에 진학한 후에는 컴퓨터공학이라는 진로를 명확히 정하고, 그 목표를 향해 꾸준히 준비해 나갔습니다.  
+          학교 내 정보 관련 동아리에 가입해 코딩 기초를 배우고 간단한 프로그램을 직접 작성해보았으며, 
+          정보처리기능사 자격증을 준비하며 컴퓨터 시스템의 전반적인 구조에 대해 체계적으로 공부했습니다. 
+          또, 소프트웨어 진로를 꿈꾸는 친구들과 함께 앱 아이디어를 기획하고 모의 해커톤 활동에도 참여해보는 등 실전 감각도 길렀습니다. 
+          이러한 다양한 활동을 통해 단순한 흥미를 넘어서, 전공자로서의 자질과 준비된 자세를 갖추기 위해 노력해왔습니다. 
+        </div>
+      </div>
+      <div class="grade-links">
+        <a href="Subpage1.html">대</a>
+        <a href="Subpage1_1.html">고</a>
+        <a href="Subpage1_2.html">중</a>
+        <a href="Subpage1_3.html">초</a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+  <p>
+    <a href="index.html">🏠 홈으로</a> |
+    <a href="#top">🔝 맨 위로</a>
+  </p>
+    ⓒ 2025 나의 홈페이지
+  </footer>
+</body>
+</html>

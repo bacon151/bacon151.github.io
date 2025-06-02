@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="common.css">
+  <style>
+    .container {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      padding: 30px;
+      background: linear-gradient(to bottom right, #fff5e6, #f8f9fa);
+    }
+    .container a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    aside {
+      width: 150px;
+      background-color: #fed7aa;
+      padding: 15px;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 2;
+      border: 1px solid #444;
+    }
+
+    section {
+      flex: 1;
+      background-color: white;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+
+    .section-header {
+      background-color: #facc15;
+      padding: 10px;
+      font-size: 20px;
+      margin-bottom: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+   
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .image-box {
+      flex-shrink: 0;
+      text-align: center;
+    }
+
+    .image-box img {
+      max-width: 300px;
+      height: auto;
+      border-radius: 10px;
+      border: 1px solid #aaa;
+    }
+
+    .intro-text {
+      max-width: 500px;
+      background-color: #f3f4f6;
+      border: 1px solid #444;
+      padding: 15px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .grade-links {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .grade-links a {
+      display: inline-block;
+      background-color: #e0f2fe;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-weight: bold;
+      color: black;
+      text-decoration: none;
+      border: 1px solid #999;
+    }
+    
+    @media (max-width: 768px) {
+      header {
+        text-align: center;
+      }
+
+      #logo {
+        float: none;
+        margin: 0 auto;
+        display: block;
+      }
+
+      nav {
+        float: none;
+        margin-top: 10px;
+      }
+
+      nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul li {
+        margin: 5px 0;
+      }
+
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .content {
+        flex-direction: column;
+      }
+
+      aside {
+        width: 100%;
+        text-align: center;
+      }
+
+      .image-box,
+      .intro-text {
+        width: 100%;
+        height: auto;
+      }
+
+      .grade-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .grade-links a {
+        width: 80%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html"><img id="logo" src="logo.jpg"></a>
+    <nav>
+      <ul>
+        <li><a href="Subpage1.html"><img src="menu01.jpg"></a></li>
+        <li><a href="Subpage2.html"><img src="menu02.jpg"></a></li>
+        <li><a href="Subpage3.html"><img src="menu03.jpg"></a></li>
+        <li><a href="Subpage4.html"><img src="menu04.jpg"></a></li>
+        <li><a href="Subpage5.html"><img src="menu05.jpg"></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <aside>
+      <a href="Subpage1.html"><p>▶대학교</p></a>
+      <a href="Subpage1_1.html"><p>고등학교</p></a>
+      <a href="Subpage1_2.html"><p>중학교</p></a>
+      <a href="Subpage1_3.html"><p>초등학교</p></a>
+    </aside>
+
+    <section>
+      <div class="section-header">나의 일생생 (대학교)</div>
+      <div class="content">
+        <div class="image-box"><img src="mainphoto.jpg"></div>
+        <div class="intro-text">
+          대학교에 입학하면서 본격적으로 컴퓨터공학을 체계적으로 배우기 시작했습니다.
+          자료구조, 알고리즘, 운영체제 등 전공 필수 과목을 통해 소프트웨어의 핵심 원리를 이해하고, 프로그래밍 언어(Python, C 등)에 대한 실습을 통해 실전 감각을 키웠습니다.
+          특히 팀 프로젝트 수업에서는 백엔드와 프론트엔드 역할을 모두 맡으며 웹 애플리케이션을 개발했고, 실제 사용자를 고려한 UI 설계와 서버 구축까지 경험해보면서 개발의 전 과정을 익혔습니다.
+          방학 동안에는 온라인 강의와 실습을 통해 Unity를 활용한 간단한 2D 게임을 제작해보기도 했고, 공공데이터를 수집해 시각화하는 데이터 분석 프로젝트도 진행해보았습니다.
+          아직 부족한 점도 많지만, 배우는 과정을 즐기고 있고 앞으로 더 성장할 수 있다는 가능성에 설렙니다. 이러한 경험들이 쌓여 나만의 전문성과 방향성을 갖춘 개발자로 나아가는 기반이 되고 있습니다.
+        </div>
+      </div>
+      <div class="grade-links">
+        <a href="Subpage1.html">대</a>
+        <a href="Subpage1_1.html">고</a>
+        <a href="Subpage1_2.html">중</a>
+        <a href="Subpage1_3.html">초</a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+  <p>
+    <a href="index.html">🏠 홈으로</a> |
+    <a href="#top">🔝 맨 위로</a>
+  </p>
+    ⓒ 2025 나의 홈페이지
+  </footer>
+</body>
+</html>

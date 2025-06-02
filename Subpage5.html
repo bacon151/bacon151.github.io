@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="common.css">
+  <style>
+    main {
+      background: linear-gradient(to bottom right, #fff5e6, #f8f9fa);
+      padding: 40px;
+      min-height: 400px;
+    }
+
+    .interview-box {
+      display: flex;
+      border: 2px solid #92400e;
+      padding: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+      background-color: #f9fafb;
+    }
+
+    .interview-img {
+      flex: 1;
+      margin-right: 30px;
+    }
+
+    .interview-img img {
+      width: 100%;
+      border: 1px solid #ccc;
+    }
+
+    .interview-content {
+      flex: 2;
+    }
+
+    .interview-content h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      border-bottom: 2px solid #92400e;
+      padding-bottom: 10px;
+    }
+
+    .qa {
+      margin-bottom: 20px;
+    }
+
+    .qa p {
+      margin: 5px 0;
+    }
+
+    .qa .q {
+      font-weight: bold;
+      color: #c2410c;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        text-align: center;
+      }
+
+      #logo {
+        float: none;
+        margin: 0 auto;
+        display: block;
+      }
+
+      nav {
+        float: none;
+        margin-top: 10px;
+      }
+
+      nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav ul li {
+        margin: 5px 0;
+      }
+      .interview-box {
+        flex-direction: column;
+      }
+
+      .interview-img {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html"><img id="logo" src="logo.jpg"></a>
+    <nav>
+      <ul>
+        <li><a href="Subpage1.html"><img src="menu01.jpg"></a></li>
+        <li><a href="Subpage2.html"><img src="menu02.jpg"></a></li>
+        <li><a href="Subpage3.html"><img src="menu03.jpg"></a></li>
+        <li><a href="Subpage4.html"><img src="menu04.jpg"></a></li>
+        <li><a href="Subpage5.html"><img src="menu05.jpg"></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="interview-box">
+      <div class="interview-img">
+        <img src="mainphoto.jpg">
+      </div>
+      <div class="interview-content">
+        <h2>인터뷰 형식으로 나를 소개합니다</h2>
+
+        <div class="qa">
+          <p class="q">Q.  컴퓨터공학에 관심을 가지게 된 계기는 무엇인가요?</p>
+          <p class="a">A.  어릴 때부터 기계나 전자기기의 구조에 관심이 많았고, 중학생 때 처음으로 직접 조립한 컴퓨터를 계기로 소프트웨어와 하드웨어의 관계에 깊은 흥미를 가지게 되었습니다.</p>
+        </div>
+
+        <div class="qa">
+          <p class="q">Q. 개발을 하면서 중요하게 생각하는 가치는 무엇인가요?</p>
+          <p class="a">A. 효율성과 가독성입니다. 단지 돌아가는 코드가 아니라, 유지보수와 협업에 적합한 구조를 만들기 위해 노력합니다.</p>
+        </div>
+
+        <div class="qa">
+          <p class="q">Q. 기억에 남는 프로젝트가 있다면?</p>
+          <p class="a">A. 군부대에서 소프트웨어 개발병에 지원을 해 뽑히게 되어 AT 정보 플랫폼 및 자동화 시스템 개발을 한일이 가장 기억에 남습니다.</p>
+        </div>
+
+        <div class="qa">
+          <p class="q">Q. 앞으로 어떤 개발자가 되고 싶나요?</p>
+          <p class="a">A. 기술을 깊이 이해하고, 실생활 문제를 해결하는 솔루션을 만드는 개발자가 되고 싶습니다. 
+                      특히, AI, 시스템 소프트웨어, 데이터 기반 서비스에 기여할 수 있는 실력자가 되는 것이 목표입니다.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+  <p>
+    <a href="index.html">🏠 홈으로</a> |
+    <a href="#top">🔝 맨 위로</a>
+  </p>
+    ⓒ 2025 나의 홈페이지
+  </footer>
+</body>
+</html>
